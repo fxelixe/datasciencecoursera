@@ -1,0 +1,22 @@
+---
+title: "Leaflet Map Project"
+author: "Felix Tandiono"
+date: "7/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(leaflet)
+```
+This is UNPAR. The most oldest Private Universitiy is West Java Region. Thats the place where I studied Mathematics for bachelor degree.
+```{r}
+my_map <- leaflet() %>% addTiles() %>%
+     addMarkers(lat=-6.875257, lng=107.605667,popup = "<a href='http://www.unpar.ac.id/'>Parahyangan Catholic University</a>")
+my_map
+```
+ ## adding markers
